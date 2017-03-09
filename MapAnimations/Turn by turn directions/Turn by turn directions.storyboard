@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ooF-6H-LDS">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Turn By Turn DirectionsVC-->
+        <scene sceneID="NAa-kb-SNj">
+            <objects>
+                <viewController id="ooF-6H-LDS" customClass="TurnByTurnDirectionsVC" customModule="MapAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Woa-Xy-cG5"/>
+                        <viewControllerLayoutGuide type="bottom" id="854-0u-Mv4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P0f-Qo-b4V">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idg-Tb-k6b" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zT0-rx-Bg9">
+                                <rect key="frame" x="353.5" y="40" width="62" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yH-ie-ZYZ">
+                                        <rect key="frame" x="10" y="10" width="42" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8yH-ie-ZYZ" firstAttribute="top" secondItem="zT0-rx-Bg9" secondAttribute="top" constant="10" id="JNI-gy-4re"/>
+                                    <constraint firstItem="8yH-ie-ZYZ" firstAttribute="leading" secondItem="zT0-rx-Bg9" secondAttribute="leading" constant="10" id="XU6-v8-3rR"/>
+                                    <constraint firstAttribute="trailing" secondItem="8yH-ie-ZYZ" secondAttribute="trailing" constant="10" id="d8Z-od-ebj"/>
+                                    <constraint firstAttribute="bottom" secondItem="8yH-ie-ZYZ" secondAttribute="bottom" constant="10" id="jhB-bd-5Sf"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uQ-vh-1V4">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8wh-HG-Vae"/>
+                                    <barButtonItem enabled="NO" title="Route" id="DJx-xU-0cx">
+                                        <connections>
+                                            <action selector="route" destination="ooF-6H-LDS" id="6Vn-4u-7qE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yw0-Yo-DuO"/>
+                                    <barButtonItem title="Item" id="6Ba-1k-IkU">
+                                        <connections>
+                                            <action selector="animate" destination="ooF-6H-LDS" id="agy-07-540"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zT0-rx-Bg9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P0f-Qo-b4V" secondAttribute="leading" constant="20" id="0r3-9y-kBR"/>
+                            <constraint firstItem="9uQ-vh-1V4" firstAttribute="top" secondItem="idg-Tb-k6b" secondAttribute="bottom" id="Izi-TA-duv"/>
+                            <constraint firstItem="idg-Tb-k6b" firstAttribute="leading" secondItem="P0f-Qo-b4V" secondAttribute="leading" id="NUw-lK-qwa"/>
+                            <constraint firstAttribute="trailing" secondItem="9uQ-vh-1V4" secondAttribute="trailing" id="VKG-KQ-IcI"/>
+                            <constraint firstItem="zT0-rx-Bg9" firstAttribute="centerX" secondItem="P0f-Qo-b4V" secondAttribute="centerX" id="YNx-hP-Xey"/>
+                            <constraint firstItem="854-0u-Mv4" firstAttribute="top" secondItem="9uQ-vh-1V4" secondAttribute="bottom" id="bR2-TD-lKg"/>
+                            <constraint firstItem="zT0-rx-Bg9" firstAttribute="top" secondItem="Woa-Xy-cG5" secondAttribute="bottom" constant="20" id="frd-Og-6JZ"/>
+                            <constraint firstItem="9uQ-vh-1V4" firstAttribute="leading" secondItem="P0f-Qo-b4V" secondAttribute="leading" id="iai-SM-twZ"/>
+                            <constraint firstItem="idg-Tb-k6b" firstAttribute="top" secondItem="P0f-Qo-b4V" secondAttribute="top" id="u78-Sm-cfe"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zT0-rx-Bg9" secondAttribute="trailing" constant="20" id="w9i-MZ-KjW"/>
+                            <constraint firstAttribute="trailing" secondItem="idg-Tb-k6b" secondAttribute="trailing" id="xAb-Va-Kai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionsLabel" destination="8yH-ie-ZYZ" id="bZE-34-fvD"/>
+                        <outlet property="directionsView" destination="zT0-rx-Bg9" id="fPy-YY-gre"/>
+                        <outlet property="mapView" destination="idg-Tb-k6b" id="vwT-dH-8l6"/>
+                        <outlet property="routeBBI" destination="DJx-xU-0cx" id="hfp-qq-YGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dA8-MO-cPe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.5625" y="339.84375"/>
+        </scene>
+    </scenes>
+</document>

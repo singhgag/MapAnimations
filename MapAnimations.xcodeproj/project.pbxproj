@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E3C44341E64F2C20072A370 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C44331E64F2C20072A370 /* AppDelegate.swift */; };
+		3E3C44391E64F2C20072A370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C44371E64F2C20072A370 /* Main.storyboard */; };
+		3E3C443B1E64F2C20072A370 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C443A1E64F2C20072A370 /* Assets.xcassets */; };
+		3E3C443E1E64F2C20072A370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3C443C1E64F2C20072A370 /* LaunchScreen.storyboard */; };
+		3EB1D9031E6F833700E00E39 /* Flights and paths.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1D9021E6F833700E00E39 /* Flights and paths.storyboard */; };
+		3EDAEEE21E64F6680022D764 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEEE11E64F6680022D764 /* ArcGIS.bundle */; };
+		3EDAEEEC1E65F5040022D764 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEE71E65F5040022D764 /* SVIndefiniteAnimatedView.m */; };
+		3EDAEEED1E65F5040022D764 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEEE91E65F5040022D764 /* SVProgressHUD.bundle */; };
+		3EDAEEEE1E65F5040022D764 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEEB1E65F5040022D764 /* SVProgressHUD.m */; };
+		3EDAEEF41E65FAF90022D764 /* AnimateAlongPathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEF31E65FAF90022D764 /* AnimateAlongPathHelper.swift */; };
+		3EDAEEF61E65FDBB0022D764 /* PointInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEF51E65FDBB0022D764 /* PointInterpolator.swift */; };
+		3EDAEEFA1E66296C0022D764 /* AGSPolylineBuilderExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEF91E66296C0022D764 /* AGSPolylineBuilderExtenstion.swift */; };
+		3EDAEEFE1E69D8310022D764 /* DemosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEEFD1E69D8310022D764 /* DemosListViewController.swift */; };
+		3EDAEF011E69D9650022D764 /* Animate along path.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF001E69D9650022D764 /* Animate along path.storyboard */; };
+		3EDAEF031E69DA390022D764 /* AnimateAlongPathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF021E69DA390022D764 /* AnimateAlongPathVC.swift */; };
+		3EDAEF081E69EE8F0022D764 /* TurnByTurnDirectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF071E69EE8F0022D764 /* TurnByTurnDirectionsVC.swift */; };
+		3EDAEF0A1E69F2250022D764 /* Turn by turn directions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF091E69F2250022D764 /* Turn by turn directions.storyboard */; };
+		3EDAEF0D1E6A030F0022D764 /* Draw animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF0C1E6A030F0022D764 /* Draw animation.storyboard */; };
+		3EDAEF0F1E6A03270022D764 /* DrawAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF0E1E6A03270022D764 /* DrawAnimationViewController.swift */; };
+		3EDAEF1F1E6A4C210022D764 /* CarsAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF1E1E6A4C210022D764 /* CarsAnimationViewController.swift */; };
+		3EDAEF2F1E6A7E860022D764 /* Trip1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF271E6A7E860022D764 /* Trip1.txt */; };
+		3EDAEF301E6A7E860022D764 /* Trip2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF281E6A7E860022D764 /* Trip2.txt */; };
+		3EDAEF311E6A7E860022D764 /* Trip3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF291E6A7E860022D764 /* Trip3.txt */; };
+		3EDAEF321E6A7E860022D764 /* Trip4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF2A1E6A7E860022D764 /* Trip4.txt */; };
+		3EDAEF331E6A7E860022D764 /* Trip5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF2B1E6A7E860022D764 /* Trip5.txt */; };
+		3EDAEF341E6A7E860022D764 /* Trip6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF2C1E6A7E860022D764 /* Trip6.txt */; };
+		3EDAEF351E6A7E860022D764 /* Trip7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF2D1E6A7E860022D764 /* Trip7.txt */; };
+		3EDAEF361E6A7E860022D764 /* Trip8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF2E1E6A7E860022D764 /* Trip8.txt */; };
+		3EDAEF3C1E6A82D30022D764 /* Trip9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF371E6A82D30022D764 /* Trip9.txt */; };
+		3EDAEF3D1E6A82D30022D764 /* Trip10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF381E6A82D30022D764 /* Trip10.txt */; };
+		3EDAEF3E1E6A82D30022D764 /* Trip11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF391E6A82D30022D764 /* Trip11.txt */; };
+		3EDAEF3F1E6A82D30022D764 /* Trip12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF3A1E6A82D30022D764 /* Trip12.txt */; };
+		3EDAEF401E6A82D30022D764 /* Trip13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF3B1E6A82D30022D764 /* Trip13.txt */; };
+		3EDAEF421E6B31950022D764 /* FlightPathsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF411E6B31950022D764 /* FlightPathsViewController.swift */; };
+		3EE618A31E6F377D00A36DDC /* DrawAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE618A21E6F377D00A36DDC /* DrawAnimationHelper.swift */; };
+		3EE618AA1E6F76AD00A36DDC /* GriffithParkJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EE618A61E6F76AD00A36DDC /* GriffithParkJson.txt */; };
+		3EE618AB1E6F76AD00A36DDC /* HighwayJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EE618A71E6F76AD00A36DDC /* HighwayJson.txt */; };
+		3EE618AC1E6F76AD00A36DDC /* Viewpoint animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE618A81E6F76AD00A36DDC /* Viewpoint animation.storyboard */; };
+		3EE618AD1E6F76AD00A36DDC /* SetViewpointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE618A91E6F76AD00A36DDC /* SetViewpointViewController.swift */; };
+		3EE618B01E6F7DAC00A36DDC /* Car route simulation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE618AF1E6F7DAC00A36DDC /* Car route simulation.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E3C44301E64F2C20072A370 /* MapAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3C44331E64F2C20072A370 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E3C44381E64F2C20072A370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E3C443A1E64F2C20072A370 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E3C443D1E64F2C20072A370 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E3C443F1E64F2C20072A370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB1D9021E6F833700E00E39 /* Flights and paths.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Flights and paths.storyboard"; path = "Flights and paths/Flights and paths.storyboard"; sourceTree = "<group>"; };
+		3EDAEEE11E64F6680022D764 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<group>"; };
+		3EDAEEE31E65F5040022D764 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		3EDAEEE61E65F5040022D764 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3EDAEEE71E65F5040022D764 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3EDAEEE81E65F5040022D764 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3EDAEEE91E65F5040022D764 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3EDAEEEA1E65F5040022D764 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3EDAEEEB1E65F5040022D764 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3EDAEEF31E65FAF90022D764 /* AnimateAlongPathHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateAlongPathHelper.swift; sourceTree = "<group>"; };
+		3EDAEEF51E65FDBB0022D764 /* PointInterpolator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointInterpolator.swift; sourceTree = "<group>"; };
+		3EDAEEF91E66296C0022D764 /* AGSPolylineBuilderExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AGSPolylineBuilderExtenstion.swift; path = Extensions/AGSPolylineBuilderExtenstion.swift; sourceTree = "<group>"; };
+		3EDAEEFD1E69D8310022D764 /* DemosListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemosListViewController.swift; path = Controllers/DemosListViewController.swift; sourceTree = "<group>"; };
+		3EDAEF001E69D9650022D764 /* Animate along path.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Animate along path.storyboard"; path = "Animate along path/Animate along path.storyboard"; sourceTree = "<group>"; };
+		3EDAEF021E69DA390022D764 /* AnimateAlongPathVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimateAlongPathVC.swift; path = "Animate along path/AnimateAlongPathVC.swift"; sourceTree = "<group>"; };
+		3EDAEF071E69EE8F0022D764 /* TurnByTurnDirectionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TurnByTurnDirectionsVC.swift; path = "Turn by turn directions/TurnByTurnDirectionsVC.swift"; sourceTree = "<group>"; };
+		3EDAEF091E69F2250022D764 /* Turn by turn directions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Turn by turn directions.storyboard"; path = "Turn by turn directions/Turn by turn directions.storyboard"; sourceTree = "<group>"; };
+		3EDAEF0C1E6A030F0022D764 /* Draw animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Draw animation.storyboard"; path = "Draw animation/Draw animation.storyboard"; sourceTree = "<group>"; };
+		3EDAEF0E1E6A03270022D764 /* DrawAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawAnimationViewController.swift; path = "Draw animation/DrawAnimationViewController.swift"; sourceTree = "<group>"; };
+		3EDAEF1E1E6A4C210022D764 /* CarsAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarsAnimationViewController.swift; path = "Car route simulation/CarsAnimationViewController.swift"; sourceTree = "<group>"; };
+		3EDAEF271E6A7E860022D764 /* Trip1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip1.txt; sourceTree = "<group>"; };
+		3EDAEF281E6A7E860022D764 /* Trip2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip2.txt; sourceTree = "<group>"; };
+		3EDAEF291E6A7E860022D764 /* Trip3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip3.txt; sourceTree = "<group>"; };
+		3EDAEF2A1E6A7E860022D764 /* Trip4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip4.txt; sourceTree = "<group>"; };
+		3EDAEF2B1E6A7E860022D764 /* Trip5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip5.txt; sourceTree = "<group>"; };
+		3EDAEF2C1E6A7E860022D764 /* Trip6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip6.txt; sourceTree = "<group>"; };
+		3EDAEF2D1E6A7E860022D764 /* Trip7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip7.txt; sourceTree = "<group>"; };
+		3EDAEF2E1E6A7E860022D764 /* Trip8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip8.txt; sourceTree = "<group>"; };
+		3EDAEF371E6A82D30022D764 /* Trip9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip9.txt; sourceTree = "<group>"; };
+		3EDAEF381E6A82D30022D764 /* Trip10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip10.txt; sourceTree = "<group>"; };
+		3EDAEF391E6A82D30022D764 /* Trip11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip11.txt; sourceTree = "<group>"; };
+		3EDAEF3A1E6A82D30022D764 /* Trip12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip12.txt; sourceTree = "<group>"; };
+		3EDAEF3B1E6A82D30022D764 /* Trip13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trip13.txt; sourceTree = "<group>"; };
+		3EDAEF411E6B31950022D764 /* FlightPathsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightPathsViewController.swift; path = "Flights and paths/FlightPathsViewController.swift"; sourceTree = "<group>"; };
+		3EE618A21E6F377D00A36DDC /* DrawAnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawAnimationHelper.swift; sourceTree = "<group>"; };
+		3EE618A61E6F76AD00A36DDC /* GriffithParkJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GriffithParkJson.txt; sourceTree = "<group>"; };
+		3EE618A71E6F76AD00A36DDC /* HighwayJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HighwayJson.txt; sourceTree = "<group>"; };
+		3EE618A81E6F76AD00A36DDC /* Viewpoint animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Viewpoint animation.storyboard"; sourceTree = "<group>"; };
+		3EE618A91E6F76AD00A36DDC /* SetViewpointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewpointViewController.swift; sourceTree = "<group>"; };
+		3EE618AF1E6F7DAC00A36DDC /* Car route simulation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Car route simulation.storyboard"; path = "Car route simulation/Car route simulation.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E3C442D1E64F2C20072A370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E3C44271E64F2C20072A370 = {
+			isa = PBXGroup;
+			children = (
+				3E3C44321E64F2C20072A370 /* MapAnimations */,
+				3E3C44311E64F2C20072A370 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E3C44311E64F2C20072A370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E3C44301E64F2C20072A370 /* MapAnimations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E3C44321E64F2C20072A370 /* MapAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEEFF1E69D9400022D764 /* Animate along path */,
+				3EE618AE1E6F7D6400A36DDC /* Car route simulation */,
+				3EB1D9011E6F830000E00E39 /* Flights and paths */,
+				3EE618A51E6F76AD00A36DDC /* Viewpoint animation */,
+				3EDAEF061E69EE480022D764 /* Turn by turn directions */,
+				3EDAEF0B1E6A02D60022D764 /* Draw animation */,
+				3EDAEEF01E65F96F0022D764 /* Helpers */,
+				3EDAEEEF1E65F95D0022D764 /* Controllers */,
+				3EDAEEE11E64F6680022D764 /* ArcGIS.bundle */,
+				3E3C44331E64F2C20072A370 /* AppDelegate.swift */,
+				3E3C44371E64F2C20072A370 /* Main.storyboard */,
+				3E3C443A1E64F2C20072A370 /* Assets.xcassets */,
+				3E3C443C1E64F2C20072A370 /* LaunchScreen.storyboard */,
+				3E3C443F1E64F2C20072A370 /* Info.plist */,
+				3EDAEEE31E65F5040022D764 /* BridgingHeader.h */,
+				3EDAEEE41E65F5040022D764 /* Libraries */,
+				3EDAEEF91E66296C0022D764 /* AGSPolylineBuilderExtenstion.swift */,
+			);
+			path = MapAnimations;
+			sourceTree = "<group>";
+		};
+		3EB1D9011E6F830000E00E39 /* Flights and paths */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF411E6B31950022D764 /* FlightPathsViewController.swift */,
+				3EB1D9021E6F833700E00E39 /* Flights and paths.storyboard */,
+			);
+			name = "Flights and paths";
+			sourceTree = "<group>";
+		};
+		3EDAEEE41E65F5040022D764 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEEE51E65F5040022D764 /* SVProgressHUD */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3EDAEEE51E65F5040022D764 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEEE61E65F5040022D764 /* SVIndefiniteAnimatedView.h */,
+				3EDAEEE71E65F5040022D764 /* SVIndefiniteAnimatedView.m */,
+				3EDAEEE81E65F5040022D764 /* SVProgressHUD-Prefix.pch */,
+				3EDAEEE91E65F5040022D764 /* SVProgressHUD.bundle */,
+				3EDAEEEA1E65F5040022D764 /* SVProgressHUD.h */,
+				3EDAEEEB1E65F5040022D764 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		3EDAEEEF1E65F95D0022D764 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEEFD1E69D8310022D764 /* DemosListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3EDAEEF01E65F96F0022D764 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEEF51E65FDBB0022D764 /* PointInterpolator.swift */,
+				3EDAEEF31E65FAF90022D764 /* AnimateAlongPathHelper.swift */,
+				3EE618A21E6F377D00A36DDC /* DrawAnimationHelper.swift */,
+			);
+			name = Helpers;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3EDAEEFF1E69D9400022D764 /* Animate along path */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF001E69D9650022D764 /* Animate along path.storyboard */,
+				3EDAEF021E69DA390022D764 /* AnimateAlongPathVC.swift */,
+			);
+			name = "Animate along path";
+			sourceTree = "<group>";
+		};
+		3EDAEF061E69EE480022D764 /* Turn by turn directions */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF071E69EE8F0022D764 /* TurnByTurnDirectionsVC.swift */,
+				3EDAEF091E69F2250022D764 /* Turn by turn directions.storyboard */,
+			);
+			name = "Turn by turn directions";
+			sourceTree = "<group>";
+		};
+		3EDAEF0B1E6A02D60022D764 /* Draw animation */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF0C1E6A030F0022D764 /* Draw animation.storyboard */,
+				3EDAEF0E1E6A03270022D764 /* DrawAnimationViewController.swift */,
+			);
+			name = "Draw animation";
+			sourceTree = "<group>";
+		};
+		3EDAEF261E6A7E6F0022D764 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF271E6A7E860022D764 /* Trip1.txt */,
+				3EDAEF281E6A7E860022D764 /* Trip2.txt */,
+				3EDAEF291E6A7E860022D764 /* Trip3.txt */,
+				3EDAEF2A1E6A7E860022D764 /* Trip4.txt */,
+				3EDAEF2B1E6A7E860022D764 /* Trip5.txt */,
+				3EDAEF2C1E6A7E860022D764 /* Trip6.txt */,
+				3EDAEF2D1E6A7E860022D764 /* Trip7.txt */,
+				3EDAEF2E1E6A7E860022D764 /* Trip8.txt */,
+				3EDAEF371E6A82D30022D764 /* Trip9.txt */,
+				3EDAEF381E6A82D30022D764 /* Trip10.txt */,
+				3EDAEF391E6A82D30022D764 /* Trip11.txt */,
+				3EDAEF3A1E6A82D30022D764 /* Trip12.txt */,
+				3EDAEF3B1E6A82D30022D764 /* Trip13.txt */,
+			);
+			name = Trips;
+			sourceTree = "<group>";
+		};
+		3EE618A51E6F76AD00A36DDC /* Viewpoint animation */ = {
+			isa = PBXGroup;
+			children = (
+				3EE618A61E6F76AD00A36DDC /* GriffithParkJson.txt */,
+				3EE618A71E6F76AD00A36DDC /* HighwayJson.txt */,
+				3EE618A81E6F76AD00A36DDC /* Viewpoint animation.storyboard */,
+				3EE618A91E6F76AD00A36DDC /* SetViewpointViewController.swift */,
+			);
+			name = "Viewpoint animation";
+			path = "Change viewpoint";
+			sourceTree = "<group>";
+		};
+		3EE618AE1E6F7D6400A36DDC /* Car route simulation */ = {
+			isa = PBXGroup;
+			children = (
+				3EDAEF261E6A7E6F0022D764 /* Trips */,
+				3EDAEF1E1E6A4C210022D764 /* CarsAnimationViewController.swift */,
+				3EE618AF1E6F7DAC00A36DDC /* Car route simulation.storyboard */,
+			);
+			name = "Car route simulation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E3C442F1E64F2C20072A370 /* MapAnimations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3C44421E64F2C20072A370 /* Build configuration list for PBXNativeTarget "MapAnimations" */;
+			buildPhases = (
+				3E3C442C1E64F2C20072A370 /* Sources */,
+				3E3C442D1E64F2C20072A370 /* Frameworks */,
+				3E3C442E1E64F2C20072A370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapAnimations;
+			productName = MapAnimations;
+			productReference = 3E3C44301E64F2C20072A370 /* MapAnimations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E3C44281E64F2C20072A370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Gagandeep Singh";
+				TargetAttributes = {
+					3E3C442F1E64F2C20072A370 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 75Z67E6SV2;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3E3C442B1E64F2C20072A370 /* Build configuration list for PBXProject "MapAnimations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E3C44271E64F2C20072A370;
+			productRefGroup = 3E3C44311E64F2C20072A370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E3C442F1E64F2C20072A370 /* MapAnimations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E3C442E1E64F2C20072A370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDAEF361E6A7E860022D764 /* Trip8.txt in Resources */,
+				3EDAEEED1E65F5040022D764 /* SVProgressHUD.bundle in Resources */,
+				3EDAEF401E6A82D30022D764 /* Trip13.txt in Resources */,
+				3EE618AA1E6F76AD00A36DDC /* GriffithParkJson.txt in Resources */,
+				3E3C443E1E64F2C20072A370 /* LaunchScreen.storyboard in Resources */,
+				3E3C443B1E64F2C20072A370 /* Assets.xcassets in Resources */,
+				3EDAEF3E1E6A82D30022D764 /* Trip11.txt in Resources */,
+				3EDAEF011E69D9650022D764 /* Animate along path.storyboard in Resources */,
+				3EDAEF331E6A7E860022D764 /* Trip5.txt in Resources */,
+				3EDAEF301E6A7E860022D764 /* Trip2.txt in Resources */,
+				3EDAEEE21E64F6680022D764 /* ArcGIS.bundle in Resources */,
+				3E3C44391E64F2C20072A370 /* Main.storyboard in Resources */,
+				3EDAEF3F1E6A82D30022D764 /* Trip12.txt in Resources */,
+				3EDAEF2F1E6A7E860022D764 /* Trip1.txt in Resources */,
+				3EDAEF321E6A7E860022D764 /* Trip4.txt in Resources */,
+				3EE618AB1E6F76AD00A36DDC /* HighwayJson.txt in Resources */,
+				3EDAEF311E6A7E860022D764 /* Trip3.txt in Resources */,
+				3EDAEF341E6A7E860022D764 /* Trip6.txt in Resources */,
+				3EB1D9031E6F833700E00E39 /* Flights and paths.storyboard in Resources */,
+				3EDAEF351E6A7E860022D764 /* Trip7.txt in Resources */,
+				3EDAEF3C1E6A82D30022D764 /* Trip9.txt in Resources */,
+				3EDAEF0D1E6A030F0022D764 /* Draw animation.storyboard in Resources */,
+				3EE618B01E6F7DAC00A36DDC /* Car route simulation.storyboard in Resources */,
+				3EDAEF0A1E69F2250022D764 /* Turn by turn directions.storyboard in Resources */,
+				3EE618AC1E6F76AD00A36DDC /* Viewpoint animation.storyboard in Resources */,
+				3EDAEF3D1E6A82D30022D764 /* Trip10.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E3C442C1E64F2C20072A370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDAEEF41E65FAF90022D764 /* AnimateAlongPathHelper.swift in Sources */,
+				3EDAEEF61E65FDBB0022D764 /* PointInterpolator.swift in Sources */,
+				3EDAEF0F1E6A03270022D764 /* DrawAnimationViewController.swift in Sources */,
+				3EE618AD1E6F76AD00A36DDC /* SetViewpointViewController.swift in Sources */,
+				3EDAEEFE1E69D8310022D764 /* DemosListViewController.swift in Sources */,
+				3EDAEEFA1E66296C0022D764 /* AGSPolylineBuilderExtenstion.swift in Sources */,
+				3EDAEF421E6B31950022D764 /* FlightPathsViewController.swift in Sources */,
+				3EDAEF031E69DA390022D764 /* AnimateAlongPathVC.swift in Sources */,
+				3E3C44341E64F2C20072A370 /* AppDelegate.swift in Sources */,
+				3EDAEEEE1E65F5040022D764 /* SVProgressHUD.m in Sources */,
+				3EDAEEEC1E65F5040022D764 /* SVIndefiniteAnimatedView.m in Sources */,
+				3EDAEF1F1E6A4C210022D764 /* CarsAnimationViewController.swift in Sources */,
+				3EE618A31E6F377D00A36DDC /* DrawAnimationHelper.swift in Sources */,
+				3EDAEF081E69EE8F0022D764 /* TurnByTurnDirectionsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E3C44371E64F2C20072A370 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E3C44381E64F2C20072A370 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E3C443C1E64F2C20072A370 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E3C443D1E64F2C20072A370 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E3C44401E64F2C20072A370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E3C44411E64F2C20072A370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E3C44431E64F2C20072A370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z67E6SV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+				);
+				INFOPLIST_FILE = MapAnimations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.MapAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MapAnimations/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3E3C44441E64F2C20072A370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75Z67E6SV2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/SDKs/ArcGIS/iOS/Frameworks/Static",
+				);
+				INFOPLIST_FILE = MapAnimations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.esri.MapAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MapAnimations/BridgingHeader.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E3C442B1E64F2C20072A370 /* Build configuration list for PBXProject "MapAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3C44401E64F2C20072A370 /* Debug */,
+				3E3C44411E64F2C20072A370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3C44421E64F2C20072A370 /* Build configuration list for PBXNativeTarget "MapAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3C44431E64F2C20072A370 /* Debug */,
+				3E3C44441E64F2C20072A370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E3C44281E64F2C20072A370 /* Project object */;
+}

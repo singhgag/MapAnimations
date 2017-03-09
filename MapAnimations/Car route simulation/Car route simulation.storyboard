@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="swL-qC-jxf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars Animation View Controller-->
+        <scene sceneID="huS-12-DcQ">
+            <objects>
+                <viewController id="swL-qC-jxf" customClass="CarsAnimationViewController" customModule="MapAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n3Z-bC-G5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="fN7-OT-0ZK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QpS-BR-BbR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkW-nv-ap7" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xh2-Tf-zQf">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="K0m-En-R66"/>
+                                    <barButtonItem style="plain" id="NhF-fx-KCK">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="85o-kt-0zr">
+                                            <rect key="frame" x="232" y="6.5" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="switchValueChangedWithSender:" destination="swL-qC-jxf" eventType="valueChanged" id="Nbn-fU-Xya"/>
+                                            </connections>
+                                        </switch>
+                                    </barButtonItem>
+                                    <barButtonItem title="Simulate" id="vgT-p0-dTh">
+                                        <connections>
+                                            <action selector="simulate" destination="swL-qC-jxf" id="PVh-eE-cOq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EkW-nv-ap7" firstAttribute="top" secondItem="n3Z-bC-G5C" secondAttribute="bottom" id="7QV-3i-pyo"/>
+                            <constraint firstItem="xh2-Tf-zQf" firstAttribute="leading" secondItem="QpS-BR-BbR" secondAttribute="leading" id="Lr7-of-zaN"/>
+                            <constraint firstItem="fN7-OT-0ZK" firstAttribute="top" secondItem="xh2-Tf-zQf" secondAttribute="bottom" id="RtW-Bi-C5e"/>
+                            <constraint firstAttribute="trailing" secondItem="xh2-Tf-zQf" secondAttribute="trailing" id="Xbe-yK-qf8"/>
+                            <constraint firstItem="EkW-nv-ap7" firstAttribute="leading" secondItem="QpS-BR-BbR" secondAttribute="leading" id="fQy-Pl-4VV"/>
+                            <constraint firstAttribute="trailing" secondItem="EkW-nv-ap7" secondAttribute="trailing" id="kED-Iu-uia"/>
+                            <constraint firstItem="xh2-Tf-zQf" firstAttribute="top" secondItem="EkW-nv-ap7" secondAttribute="bottom" id="wHK-Cr-3Qx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="EkW-nv-ap7" id="NmV-0D-Bvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTT-5S-VFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="339.58020989505252"/>
+        </scene>
+    </scenes>
+</document>

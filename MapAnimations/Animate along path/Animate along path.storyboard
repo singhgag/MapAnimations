@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fXB-7d-WTL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animate Along PathVC-->
+        <scene sceneID="dJq-nh-onZ">
+            <objects>
+                <viewController id="fXB-7d-WTL" customClass="AnimateAlongPathVC" customModule="MapAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzW-HU-hXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="s5N-9z-Zoc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="odj-86-buV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-H9-fJX" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUg-w0-YAf">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lOk-tM-8Yo"/>
+                                    <barButtonItem enabled="NO" title="Route" id="P83-hr-IaZ">
+                                        <connections>
+                                            <action selector="route" destination="fXB-7d-WTL" id="yrI-es-DmG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gly-nN-aQy"/>
+                                    <barButtonItem title="Simulate" id="UWO-h3-gBZ">
+                                        <connections>
+                                            <action selector="animate" destination="fXB-7d-WTL" id="NXC-X1-n8Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rIC-H9-fJX" secondAttribute="trailing" id="LY0-f9-UDF"/>
+                            <constraint firstItem="RUg-w0-YAf" firstAttribute="top" secondItem="rIC-H9-fJX" secondAttribute="bottom" id="OuU-OF-veq"/>
+                            <constraint firstItem="rIC-H9-fJX" firstAttribute="leading" secondItem="odj-86-buV" secondAttribute="leading" id="Xrd-2h-P4I"/>
+                            <constraint firstItem="rIC-H9-fJX" firstAttribute="top" secondItem="odj-86-buV" secondAttribute="top" id="hBY-do-OMH"/>
+                            <constraint firstItem="s5N-9z-Zoc" firstAttribute="top" secondItem="RUg-w0-YAf" secondAttribute="bottom" id="lde-Zk-X5W"/>
+                            <constraint firstAttribute="trailing" secondItem="RUg-w0-YAf" secondAttribute="trailing" id="wcm-nX-wVS"/>
+                            <constraint firstItem="RUg-w0-YAf" firstAttribute="leading" secondItem="odj-86-buV" secondAttribute="leading" id="xhi-g2-KwX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pHT-CH-bus"/>
+                    <connections>
+                        <outlet property="mapView" destination="rIC-H9-fJX" id="6hN-xn-50y"/>
+                        <outlet property="routeBBI" destination="P83-hr-IaZ" id="z8g-lc-IG8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QXO-BC-Qho" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="340"/>
+        </scene>
+    </scenes>
+</document>

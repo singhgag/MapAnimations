@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E163f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q4m-kz-YwE">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Animation View Controller-->
+        <scene sceneID="yNS-mI-Lm6">
+            <objects>
+                <viewController id="q4m-kz-YwE" customClass="DrawAnimationViewController" customModule="MapAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ef-FD-HGJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="IiD-JI-RVc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xJA-rk-j8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-eB-tSj" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-Pg-sDp">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hAz-Ta-HZ6"/>
+                                    <barButtonItem enabled="NO" title="Route" id="vcC-iD-274">
+                                        <connections>
+                                            <action selector="route" destination="q4m-kz-YwE" id="doG-rs-cYa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="76Q-u3-g7A"/>
+                                    <barButtonItem style="plain" id="iBE-2e-aSx">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Oqf-7k-g3b">
+                                            <rect key="frame" x="653" y="7" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" id="vbj-m7-lMo">
+                                        <connections>
+                                            <action selector="animate" destination="q4m-kz-YwE" id="NqN-bu-5lL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YeM-Pg-sDp" firstAttribute="top" secondItem="uo0-eB-tSj" secondAttribute="bottom" id="LJ9-ID-IVZ"/>
+                            <constraint firstItem="uo0-eB-tSj" firstAttribute="top" secondItem="xJA-rk-j8Q" secondAttribute="top" id="R4n-S1-iYV"/>
+                            <constraint firstAttribute="trailing" secondItem="uo0-eB-tSj" secondAttribute="trailing" id="kLm-9E-DqG"/>
+                            <constraint firstItem="IiD-JI-RVc" firstAttribute="top" secondItem="YeM-Pg-sDp" secondAttribute="bottom" id="lN2-q3-ZnV"/>
+                            <constraint firstItem="uo0-eB-tSj" firstAttribute="leading" secondItem="xJA-rk-j8Q" secondAttribute="leading" id="s0K-2W-dCw"/>
+                            <constraint firstItem="YeM-Pg-sDp" firstAttribute="leading" secondItem="xJA-rk-j8Q" secondAttribute="leading" id="xZz-DI-gbE"/>
+                            <constraint firstAttribute="trailing" secondItem="YeM-Pg-sDp" secondAttribute="trailing" id="yCW-0F-ckL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="uo0-eB-tSj" id="jzf-uw-xDv"/>
+                        <outlet property="partialSwitch" destination="Oqf-7k-g3b" id="LeO-iX-EnG"/>
+                        <outlet property="routeBBI" destination="vcC-iD-274" id="ysZ-on-2IV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNg-zU-QFm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="340"/>
+        </scene>
+    </scenes>
+</document>
