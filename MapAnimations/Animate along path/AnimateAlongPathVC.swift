@@ -140,6 +140,8 @@ class AnimateAlongPathVC: UIViewController, AnimateAlongPathHelperDelegate {
                 
                 //enable bar button item
                 self?.routeBBI.isEnabled = true
+                
+                self?.route()
             }
         }
     }

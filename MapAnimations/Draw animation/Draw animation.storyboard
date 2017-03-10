@@ -37,11 +37,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="76Q-u3-g7A"/>
                                     <barButtonItem style="plain" id="iBE-2e-aSx">
                                         <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Oqf-7k-g3b">
-                                            <rect key="frame" x="653" y="7" width="51" height="31"/>
+                                            <rect key="frame" x="624" y="7" width="51" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </switch>
                                     </barButtonItem>
-                                    <barButtonItem title="Item" id="vbj-m7-lMo">
+                                    <barButtonItem title="Animate" id="vbj-m7-lMo">
                                         <connections>
                                             <action selector="animate" destination="q4m-kz-YwE" id="NqN-bu-5lL"/>
                                         </connections>

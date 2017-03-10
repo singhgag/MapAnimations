@@ -260,6 +260,8 @@ class TurnByTurnDirectionsVC: UIViewController {
                 
                 //enable bar button item
                 self?.routeBBI.isEnabled = true
+                
+                self?.route()
             }
         }
     }

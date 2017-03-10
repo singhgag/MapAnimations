@@ -106,6 +106,8 @@ class DrawAnimationViewController: UIViewController {
                 
                 //enable bar button item
                 self?.routeBBI.isEnabled = true
+                
+                self?.route()
             }
         }
     }

@@ -53,7 +53,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yw0-Yo-DuO"/>
-                                    <barButtonItem title="Item" id="6Ba-1k-IkU">
+                                    <barButtonItem title="Animate" id="6Ba-1k-IkU">
                                         <connections>
                                             <action selector="animate" destination="ooF-6H-LDS" id="agy-07-540"/>
                                         </connections>
